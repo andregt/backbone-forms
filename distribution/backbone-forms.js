@@ -13,6 +13,8 @@
   if (typeof exports !== 'undefined' && typeof require !== 'undefined') {
     var _ = root._ || require('underscore'),
         Backbone = root.Backbone || require('backbone');
+
+    var $ = require('jquery');
   }
 
   //Browser
@@ -2573,3 +2575,4 @@ Form.editors.DateTime = Form.editors.Base.extend({
   if (typeof module !== 'undefined') module.exports = Form;
 
 })(window || global || this);
+

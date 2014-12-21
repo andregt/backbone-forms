@@ -1,4 +1,21 @@
-;(function(Form) {
+
+// Alterado por André Timermann em 09/12/2014, criar um novo módulo e adicionar lá para ser incluido diretamente
+// Exemplo: require('backbone-forms-lists');
+
+;(function(root) {
+
+  if (typeof exports !== 'undefined' && typeof require !== 'undefined') {
+    var _ = root._ || require('underscore'),
+        Backbone = root.Backbone || require('backbone');
+  }
+
+  //Browser
+  else {
+    var _ = root._,
+        Backbone = root.Backbone;
+  }
+
+  var Form = Backbone.Form;
 
   /**
    * List editor
@@ -650,4 +667,4 @@
     }
   });
 
-})(Backbone.Form);
+})(window || global || this);

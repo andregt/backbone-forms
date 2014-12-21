@@ -1,9 +1,7 @@
 {
   "name": "backbone-forms",
   "description": "A flexible, customisable form framework for Backbone.JS applications.",
-  "author": {
-    "name": "Charles Davison"
-  },
+  "author": "Charles Davison",
   "version": "0.14.0",
   "dependencies": {
     "backbone": "~1.1.2"
@@ -15,9 +13,21 @@
     "jquery": "~2.1.0",
     "browserify": "~3.23.1"
   },
-  "main": "distribution.amd/backbone-forms.js",
+  "main": "distribution/backbone-forms.js",
   "browser": "distribution/backbone-forms.js",
   "scripts": {
     "test": "open test/index.html"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/powmedia/backbone-forms.git"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/powmedia/backbone-forms/issues"
   }
 }
